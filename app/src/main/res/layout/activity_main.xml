@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.danielrutz.acceleratortest.MainActivity">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true" android:layout_alignParentBottom="true" android:id="@+id/mainTable">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:" android:id="@+id/time"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeContent" android:text="Test"/>
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature:"
+                    android:id="@+id/temp"
+                    android:layout_marginTop="10dp" android:layout_below="@+id/gps"
+                    android:layout_alignParentStart="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tempContent"
+                    android:layout_marginTop="10dp"
+                    android:text="0K"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount of Hate:"
+                    android:layout_marginTop="10dp" android:id="@+id/hate" android:layout_below="@+id/hate"
+                    android:layout_alignParentStart="true"/>
+            <TextView
+                    android:text="100%"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/hate"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hateContent"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView
+                    android:text="Accelerometer:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/accel"
+                    android:layout_below="@+id/hate"
+                    android:layout_alignParentStart="true"/>
+            <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="X-Axis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/X"
+                            android:padding="10dp"/>
+                    <TextView
+                            android:text="Y-Axis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/Y"
+                            android:padding="10dp"/>
+                    <TextView
+                            android:text="Z-Axis"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/Z"
+                            android:padding="10dp"/>
+                </TableRow>
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/xContent"
+                            android:padding="10dp"/>
+                    <TextView
+                            android:text="456"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/yContent"
+                            android:padding="10dp"/>
+                    <TextView
+                            android:text="789"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/zContent"
+                            android:padding="10dp"/>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS-Coordinates:"
+                    android:id="@+id/gps"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"/>
+            <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView
+                            android:text="Latitude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView3"
+                            android:padding="10dp"/>
+                    <TextView
+                            android:text="Longitude"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:padding="10dp"/>
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/latitudeContent"
+                            android:padding="10dp"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/longitudeContent"
+                            android:padding="10dp"/>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AcceleratorTest</string>
+    <string name="shitty_test">This is a shitty test!</string>
+</resources>
